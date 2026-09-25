@@ -1,205 +1,1391 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shuriii - Evidence-Based District Leadership</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon.ico"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon.ico"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/favicon.ico"
-    />
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
 
+    <title>shuriii</title>
     <meta
       name="description"
-      content="shuriii provides K–8 teachers in underserved schools with smart tools for pedagogical documentation and progress monitoring, offering real-time guidance to identify student needs."
+      content="Continuous third-party risk management and impact measurement for K-12 public school boards."
     />
+
+    <meta name="author" content="shuriii" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="shuriii" />
+
+    <meta
+      property="og:description"
+      content="Continuous third-party risk management and impact measurement for K-12 public school boards."
+    />
+
+    <meta property="og:type" content="website" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="index.css" />
-    <!-- Swiper's CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap"
     />
-    <script src="https://unpkg.com/motion@11.0.0/dist/motion.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
-        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-        t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "jytu3i36ht");
-    </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B8S633TH43"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-  
-      gtag('config', 'G-B8S633TH43');
-    </script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <a href="#hero" class="logo"> shuriii </a>
+    <main
+      class="min-h-screen overflow-x-hidden bg-background font-sans text-foreground"
+    >
+      <!-- ========================================================= -->
+      <!-- TOP SECTION                                               -->
+      <!-- ========================================================= -->
 
-          <!-- Mobile Menu Button -->
-          <button
-            class="mobile-menu-toggle"
-            aria-label="Toggle mobile menu"
-            aria-expanded="false"
-          >
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-          </button>
-
-          <div class="nav-content">
-            
-            <div class="nav-actions">
-              <a href="mailto:info@shuriii.com" class="btn btn-secondary"
-                >Book Demo</a
+      <div class="flex flex-col lg:min-h-svh">
+        <section
+          class="relative flex flex-1 flex-col justify-center overflow-hidden"
+          style="background-image: var(--gradient-hero)"
+        >
+          <!-- HEADER -->
+          <!--
+            Replace this with the markup from your existing Header.jsx.
+            The original React page renders <Header /> here.
+          -->
+          <header class="mx-auto w-full max-w-7xl px-6 pt-5 lg:px-10 lg:pt-6">
+            <div class="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4">
+              <a
+                href="./index.html"
+                class="min-w-0 shrink-0"
+                aria-label="shuriii home"
               >
-              <button class="theme-toggle" aria-label="Toggle light mode">
                 <img
-                  src="assets/icons/light-theme-icon.svg"
-                  alt="Theme toggle"
-                  class="theme-toggle-icon"
-                  width="20"
-                  height="20"
+                  src="./assets/shuriii-logo.png"
+                  alt="shuriii"
+                  class="h-6 w-auto lg:h-7"
                 />
+              </a>
+
+              <nav
+                class="hidden items-center gap-6 text-sm font-medium text-ink-soft lg:flex xl:gap-7"
+              >
+                <a href="./index.html" class="transition-colors hover:text-ink"
+                  >Home</a
+                >
+                <a href="#how-it-works" class="transition-colors hover:text-ink"
+                  >How it works</a
+                >
+                <a
+                  href="https://shuriii.com/privacy_policy.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="transition-colors hover:text-ink"
+                >
+                  Privacy Policy
+                </a>
+                <a
+                  href="https://5ojdx6.share-na3.hsforms.com/2i6tv8EJjSO6PlvOdOVQUdw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded-md border border-border bg-card px-4 py-2 text-ink transition-colors hover:bg-secondary"
+                >
+                  Book demo
+                </a>
+              </nav>
+
+              <button
+                type="button"
+                id="menu-toggle"
+                aria-expanded="false"
+                aria-label="Open menu"
+                class="inline-flex size-10 shrink-0 items-center justify-center rounded-md border border-border bg-card text-ink lg:hidden"
+              >
+                <svg
+                  id="icon-menu"
+                  class="size-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <line x1="4" y1="12" x2="20" y2="12"></line>
+                  <line x1="4" y1="6" x2="20" y2="6"></line>
+                  <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+                <svg
+                  id="icon-close"
+                  class="size-5 hidden"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
               </button>
             </div>
-          </div>
-        </nav>
-      </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>
-            The <span class="gradient-text">districtOS™</span>: One Collaborative Hub for Evidence-Based District Leadership
-          </h1>
-          <p>
-            shuriii helps K-12 public school boards and EdTech vendors understand, in real time, whether every platform in use is safe and actually improving outcomes for staff, students, and families. By combining continuous third-party risk management with board-wide impact measurement in one shared hub, shuriii gives ICT, business, and instructional leaders the evidence to make better purchasing decisions, reduce duplicated work, and remain transparent and accountable in how public funding is spent.
-          </p>
-          <div class="hero-cta">
-            <a
-              href="mailto:info@shuriii.com"
-              class="btn btn-tangerine btn-large"
-              >Book Demo</a
+            <nav
+              id="mobile-menu"
+              class="mt-4 hidden flex-col rounded-xl border border-border bg-card p-2 text-sm font-medium text-ink-soft shadow-(--shadow-frame) lg:hidden"
             >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3 class="logo">shuriii</h3>
-            <p>DistrictOS™, NeighborhoodOS™, and shuriii™ are trademarks of shuriii, inc.</p>
-            <br />
-            <div class="footer-contact">
-              <div class="footer-icon">
-                <img src="assets/icons/mail-icon.svg" alt="email icon" />
-              </div>
-              <a href="mailto:info@shuriii.com" class="email-link"
-                >info@shuriii.com</a
+              <a
+                href="./index.html"
+                class="rounded-md px-3 py-3 transition-colors hover:bg-secondary hover:text-ink"
+                >Home</a
               >
-            </div>
-            <div class="footer-contact">
-              <div class="footer-icon">
-                <img src="assets/icons/location-icon.svg" alt="location icon" />
+              <a
+                href="#how-it-works"
+                class="rounded-md px-3 py-3 transition-colors hover:bg-secondary hover:text-ink"
+                >How it works</a
+              >
+              <a
+                href="https://shuriii.com/privacy_policy.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded-md px-3 py-3 transition-colors hover:bg-secondary hover:text-ink"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://5ojdx6.share-na3.hsforms.com/2i6tv8EJjSO6PlvOdOVQUdw"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-1 rounded-md bg-primary px-3 py-3 text-center font-semibold text-primary-foreground"
+              >
+                Book demo
+              </a>
+            </nav>
+          </header>
+
+          <!-- HERO -->
+          <div
+            class="mx-auto grid w-full max-w-7xl items-center gap-10 px-6 pb-10 pt-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-12 lg:px-10 lg:pb-8 lg:pt-8"
+          >
+            <div>
+              <p
+                class="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-brand"
+              >
+                <svg
+                  viewBox="0 0 64 64"
+                  class="size-4"
+                  role="img"
+                  aria-label="Canadian maple leaf"
+                >
+                  <path
+                    fill="#D52B1E"
+                    d="M32 4l4.3 8.6c.5 1 1.6 1.4 2.6.9l4.6-2.3-2.2 11.2c-.3 1.6 1.5 2.7 2.8 1.7l4.3-3.3 1.6 3.5c.4.8 1.3 1.2 2.1 1l7.5-1.6-2.5 8.2c-.3.9.1 1.9.9 2.3l3.4 1.8-14.9 12.1c-.8.6-1.1 1.6-.8 2.5l1.3 4.1-13.7-2.4c-1-.2-2 .6-2 1.6l.6 10.4h-3.4l.6-10.4c.1-1-.9-1.8-2-1.6l-13.7 2.4 1.3-4.1c.3-.9 0-1.9-.8-2.5L.9 37.3l3.4-1.8c.8-.4 1.2-1.4.9-2.3L2.7 25l7.5 1.6c.9.2 1.8-.2 2.1-1l1.6-3.5 4.3 3.3c1.3 1 3.1-.1 2.8-1.7L18.8 12.6l4.6 2.3c1 .5 2.1.1 2.6-.9L32 4z"
+                  />
+                </svg>
+
+                Made in Canada
+              </p>
+
+              <h1
+                class="mt-4 font-display text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-ink sm:text-[2rem] lg:text-[2.25rem]"
+              >
+                Continuous Third-party Risk Management and Impact Measurement
+                for <span class="whitespace-nowrap">K&#8209;12</span> Public
+                School Boards
+              </h1>
+
+              <p
+                class="mt-4 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg"
+              >
+              shuriii helps school boards and provincial shared service organizations see, in real time, whether every platform in use is safe and actually improving outcomes. Through one shared hub, shuriii gives ICT, business, and instructional leaders the evidence they need to make confident purchasing decisions, cut duplicated effort, and partner with vendors to improve the safety and effectiveness of every tool.
+              </p>
+
+              <div
+                class="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center"
+              >
+                <a
+                  href="https://5ojdx6.share-na3.hsforms.com/2i6tv8EJjSO6PlvOdOVQUdw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto"
+                >
+                  Book Demo
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    class="size-4"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </a>
+
+                <a
+                  href="#how-it-works"
+                  class="inline-flex w-full items-center justify-center gap-2 rounded-md border border-border bg-card px-6 py-3 text-sm font-semibold text-ink transition-colors hover:bg-secondary sm:w-auto"
+                >
+                  See how it works
+                </a>
               </div>
-              <p>33 Bloor St E, 5th Floor, Toronto, ON, M4W 3H1, Canada</p>
             </div>
-            <div class="footer-contact">
-              <div class="footer-icon">
-                <img src="assets/icons/location-icon.svg" alt="location icon" />
+
+            <!-- PRODUCT IMAGE -->
+            <div class="relative">
+              <div
+                class="rounded-2xl p-[1.5px]"
+                style="
+                  background-image: var(--gradient-frame);
+                  box-shadow: var(--shadow-frame);
+                "
+              >
+                <div class="rounded-[calc(1rem-1px)] bg-card p-1.5">
+                  <div
+                    class="overflow-hidden rounded-xl border border-border bg-background"
+                  >
+                    <div
+                      class="flex items-center gap-2 border-b border-border bg-secondary px-3 py-2"
+                    >
+                      <span
+                        class="size-2.5 rounded-full bg-destructive/60"
+                      ></span>
+                      <span class="size-2.5 rounded-full bg-chart-4/70"></span>
+                      <span class="size-2.5 rounded-full bg-signal/70"></span>
+                    </div>
+
+                    <img
+                      src="./assets/shuriii-directory-hq.webp"
+                      alt="shuriii vendor directory showing monitored K-12 EdTech platforms"
+                      width="1920"
+                      height="1009"
+                      class="mx-auto block h-auto w-full object-contain lg:max-h-[46svh]"
+                      loading="eager"
+                      decoding="sync"
+                    />
+                  </div>
+                </div>
               </div>
-              <p>1600 E 8th Ave A200, Tampa, FL 33605, United States</p>
             </div>
           </div>
-          
-          <div class="footer-section">
-            <h3>Backed By</h3>
-            <img
-              width="300"
-              height="60"
-              src="assets/footer-images/antler-google-for-startups-logo.svg"
-              alt="antler google for startups logo"
-            />
-            <h3>Supported By Community</h3>
-            <div class="supported-logos">
-              <img
-                src="assets/footer-images/43-foundation-logo.svg"
-                alt="43 foundation logo"
-              />
-              <img
-                src="assets/footer-images/source-code-academy-logo.svg"
-                alt="source code academy logo"
-              />
-            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PARTNERS                                                   -->
+        <!-- ========================================================= -->
+
+        <section
+          class="border-y border-border bg-card"
+          aria-label="Trusted and supported by education and community organizations"
+        >
+          <div class="mx-auto max-w-7xl px-6 py-7 lg:px-10 lg:py-8">
+            <p
+              class="text-center text-xs font-semibold uppercase tracking-[0.22em] text-ink-soft"
+            >
+              Trusted and supported by education and community organizations
+            </p>
+
+            <ul
+              class="mt-5 grid grid-cols-3 items-center justify-items-center gap-x-4 gap-y-5 sm:grid-cols-5 sm:gap-x-5 sm:gap-y-6 lg:grid-cols-9"
+            >
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-image-1.png"
+                  alt="ECNO"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(0.85)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-image-2.png"
+                  alt="University of Toronto"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(1)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-image-3.png"
+                  alt="Ontario Tech University"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(1)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-image-4.png"
+                  alt="43 Foundation"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(0.8)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-image-5.png"
+                  alt="DMZ"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(1.1)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-image-6.png"
+                  alt="Creative Destruction Lab"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(1)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-antler.png"
+                  alt="Antler"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(0.8)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-tribe.svg"
+                  alt="Tribe"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(0.7)"
+                  loading="lazy"
+                />
+              </li>
+
+              <li
+                class="flex h-11 w-full items-center justify-center px-1 sm:h-14"
+              >
+                <img
+                  src="./assets/partner-yspace.png"
+                  alt="YSpace, York University"
+                  class="max-h-full w-full object-contain opacity-60 grayscale transition-opacity hover:opacity-90"
+                  style="transform: scale(1)"
+                  loading="lazy"
+                />
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <p>
-            &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            shuriii. All rights reserved.
-          </p>
-          <a href="privacy_policy.html" class="email-link">Privacy Policy</a>
-        </div>
+        </section>
       </div>
-    </footer>
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+
+      <!-- ========================================================= -->
+      <!-- HOW IT WORKS                                               -->
+      <!-- ========================================================= -->
+
+      <section id="how-it-works" class="bg-secondary/40">
+        <div
+          class="mx-auto grid w-full max-w-7xl gap-8 px-6 py-14 sm:gap-12 sm:py-20 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-16 lg:px-10 lg:py-24"
+        >
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.22em] text-brand"
+            >
+              How shuriii works
+            </p>
+
+            <h2
+              class="mt-4 font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl lg:text-4xl"
+            >
+              Wherever you are in the process, shuriii has your back.
+            </h2>
+
+            <p class="mt-5 text-base leading-relaxed text-ink-soft">
+              One shared view of every tool&rsquo;s risk and impact, so boards,
+              vendors, and provincial shared service organizations can make each
+              one safer and more effective together.
+            </p>
+          </div>
+
+          <ol class="divide-y divide-border border-t border-border">
+            <li class="flex gap-4 py-7 sm:gap-6 sm:py-8 lg:gap-8">
+              <span
+                class="shrink-0 font-display text-xl font-semibold leading-none tabular-nums text-brand sm:text-2xl"
+              >
+                01
+              </span>
+
+              <div>
+                <h3
+                  class="font-display text-lg font-semibold leading-snug text-ink"
+                >
+                  Centralized Vendor Vetting &amp; Privacy Review
+                </h3>
+
+                <p class="mt-2 text-sm font-semibold leading-snug text-ink">
+                  Consolidate every EdTech vendor in one place with independent,
+                  ongoing review.
+                </p>
+
+                <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                  shuriii keeps each review current as tools change and new
+                  risks emerge, so you know where each tool stands on privacy
+                  and security and stay aligned with federal, provincial, and
+                  local privacy laws and board policies throughout the school
+                  year.
+                </p>
+              </div>
+            </li>
+
+            <li class="flex gap-4 py-7 sm:gap-6 sm:py-8 lg:gap-8">
+              <span
+                class="shrink-0 font-display text-xl font-semibold leading-none tabular-nums text-brand sm:text-2xl"
+              >
+                02
+              </span>
+
+              <div>
+                <h3
+                  class="font-display text-lg font-semibold leading-snug text-ink"
+                >
+                  Continuous Third-Party Risk Management
+                </h3>
+
+                <p class="mt-2 text-sm font-semibold leading-snug text-ink">
+                  Monitor every vendor's risk continuously and resolve issues
+                  before they escalate.
+                </p>
+
+                <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                  Identified issues are prioritized and tracked through to
+                  resolution, creating a clear, documented record that helps
+                  your board demonstrate how it protects student, staff, and
+                  family data and meets its legal obligations. Monitoring
+                  becomes continuous, not a point-in-time check.
+                </p>
+              </div>
+            </li>
+
+            <li class="flex gap-4 py-7 sm:gap-6 sm:py-8 lg:gap-8">
+              <span
+                class="shrink-0 font-display text-xl font-semibold leading-none tabular-nums text-brand sm:text-2xl"
+              >
+                03
+              </span>
+
+              <div>
+                <h3
+                  class="font-display text-lg font-semibold leading-snug text-ink"
+                >
+                  Collaborative Impact Measurement
+                </h3>
+
+                <p class="mt-2 text-sm font-semibold leading-snug text-ink">
+                  Measure the impact of each tool and work with vendors to
+                  improve it.
+                </p>
+
+                <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                  shuriii provides evidence of the value each tool brings to
+                  students, staff, families, and board leaders. Your board can
+                  see what's working and where more support or a different
+                  approach is needed, and make informed decisions about how
+                  public funds are invested.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- AUDIENCES                                                   -->
+      <!-- ========================================================= -->
+
+      <section id="overview" class="bg-background">
+        <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20 lg:px-10 lg:py-24">
+          <h2
+            class="max-w-3xl font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl"
+          >
+            Aligned leadership decisions, grounded in independent evidence
+          </h2>
+
+          <p class="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
+            One shared evidence base for ICT, business, and instructional leaders. In partnership with ECNO.
+          </p>
+
+          <div
+            class="mt-8 grid grid-cols-1 gap-6 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            <article
+              class="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-(--shadow-frame)"
+            >
+              <div class="relative aspect-4/3 overflow-hidden">
+                <img
+                  src="./assets/card-ict-leaders.jpg"
+                  alt="A school board technology leader reviewing systems on a tablet"
+                  width="1024"
+                  height="768"
+                  loading="lazy"
+                  class="size-full object-cover"
+                />
+
+                <div
+                  class="absolute inset-0"
+                  style="
+                    background-image: linear-gradient(
+                      to top,
+                      oklch(0.2 0.04 250 / 0.85) 0%,
+                      oklch(0.2 0.04 250 / 0.25) 45%,
+                      transparent 75%
+                    );
+                  "
+                ></div>
+
+                <p
+                  class="absolute bottom-4 left-5 right-5 font-display text-[0.7rem] font-semibold uppercase leading-snug tracking-[0.16em] text-white sm:text-xs"
+                >
+                  For ICT leaders
+                </p>
+              </div>
+
+              <div class="p-6 sm:p-7">
+                <h3
+                  class="font-display text-lg font-semibold leading-snug text-ink"
+                >
+                  Know when a vendor's risk changes
+                </h3>
+
+                <p class="mt-4 text-sm leading-relaxed text-ink-soft">
+                  Monitor tools beyond the initial third-party risk review, stay
+                  informed about shifts in features, terms, and data practices,
+                  and work with vendors to address new risks as they emerge.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-(--shadow-frame)"
+            >
+              <div class="relative aspect-4/3 overflow-hidden">
+                <img
+                  src="./assets/card-business-leaders.jpg"
+                  alt="School board business leaders reviewing budget documents together"
+                  width="1024"
+                  height="768"
+                  loading="lazy"
+                  class="size-full object-cover"
+                />
+
+                <div
+                  class="absolute inset-0"
+                  style="
+                    background-image: linear-gradient(
+                      to top,
+                      oklch(0.2 0.04 250 / 0.85) 0%,
+                      oklch(0.2 0.04 250 / 0.25) 45%,
+                      transparent 75%
+                    );
+                  "
+                ></div>
+
+                <p
+                  class="absolute bottom-4 left-5 right-5 font-display text-[0.7rem] font-semibold uppercase leading-snug tracking-[0.16em] text-white sm:text-xs"
+                >
+                  For business leaders
+                </p>
+              </div>
+
+              <div class="p-6 sm:p-7">
+                <h3
+                  class="font-display text-lg font-semibold leading-snug text-ink"
+                >
+                  Know the value of what you pay for
+                </h3>
+
+                <p class="mt-4 text-sm leading-relaxed text-ink-soft">
+                  Connect spending with current evidence across business,
+                  operational, and instructional tools, identify underused or
+                  overlapping tools, and work with vendors to get more value
+                  from your investments.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-(--shadow-frame)"
+            >
+              <div class="relative aspect-4/3 overflow-hidden">
+                <img
+                  src="./assets/card-instructional-leaders.jpg"
+                  alt="An educator supporting students working on laptops in class"
+                  width="1024"
+                  height="768"
+                  loading="lazy"
+                  class="size-full object-cover"
+                />
+
+                <div
+                  class="absolute inset-0"
+                  style="
+                    background-image: linear-gradient(
+                      to top,
+                      oklch(0.2 0.04 250 / 0.85) 0%,
+                      oklch(0.2 0.04 250 / 0.25) 45%,
+                      transparent 75%
+                    );
+                  "
+                ></div>
+
+                <p
+                  class="absolute bottom-4 left-5 right-5 font-display text-[0.7rem] font-semibold uppercase leading-snug tracking-[0.16em] text-white sm:text-xs"
+                >
+                  For instructional leaders
+                </p>
+              </div>
+
+              <div class="p-6 sm:p-7">
+                <h3
+                  class="font-display text-lg font-semibold leading-snug text-ink"
+                >
+                  Know what's working in real classrooms
+                </h3>
+
+                <p class="mt-4 text-sm leading-relaxed text-ink-soft">
+                  See how tools affect teaching, learning, well-being, and
+                  access, identify where more support or a different approach is
+                  needed, and work with vendors to improve them.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-(--shadow-frame)"
+            >
+              <div class="relative aspect-4/3 overflow-hidden">
+                <img
+                  src="./assets/card-ministry-leaders.jpg"
+                  alt="Provincial education officials reviewing data dashboards in a meeting room"
+                  width="1024"
+                  height="768"
+                  loading="lazy"
+                  class="size-full object-cover"
+                />
+
+                <div
+                  class="absolute inset-0"
+                  style="
+                    background-image: linear-gradient(
+                      to top,
+                      oklch(0.2 0.04 250 / 0.85) 0%,
+                      oklch(0.2 0.04 250 / 0.25) 45%,
+                      transparent 75%
+                    );
+                  "
+                ></div>
+
+                <p
+                  class="absolute bottom-4 left-5 right-5 font-display text-[0.7rem] font-semibold uppercase leading-snug tracking-[0.16em] text-white sm:text-xs"
+                >
+                  For provincial shared service organizations
+                </p>
+              </div>
+
+              <div class="p-6 sm:p-7">
+                <h3
+                  class="font-display text-lg font-semibold leading-snug text-ink"
+                >
+                  See the full picture across boards
+                </h3>
+
+                <p class="mt-4 text-sm leading-relaxed text-ink-soft">
+                  Understand which tools are in use across the province, where
+                  risks and gaps exist, and where effort is duplicated, so
+                  boards and vendors can work together to make each tool safer
+                  and more effective.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- CERTIFICATIONS                                              -->
+      <!-- ========================================================= -->
+
+      <section id="trust" class="border-t border-border bg-secondary/40">
+        <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20 lg:px-10 lg:py-24">
+          <div
+            class="grid items-center gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]"
+          >
+            <div>
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.22em] text-brand"
+              >
+                Trust and safety
+              </p>
+
+              <h2
+                class="mt-4 font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl lg:text-4xl"
+              >
+                Safe and secure for education
+              </h2>
+
+              <p class="mt-5 max-w-xl text-base leading-relaxed text-ink-soft">
+                shuriii is built from the ground up to protect data and uphold
+                the privacy regulations that matter to public school boards,
+                ministries of education, provincial shared services
+                organizations, and education partners.
+              </p>
+
+              <a
+                href="https://shuriii.com/privacy_policy.html"
+                target="_blank"
+                rel="noreferrer"
+                class="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto"
+              >
+                Privacy Policy
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  class="size-4"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            <ul
+              class="grid grid-cols-3 items-center justify-items-center gap-3 sm:gap-6"
+            >
+              <li
+                class="flex h-24 w-full items-center justify-center rounded-xl border border-border bg-card p-3 sm:h-32 sm:p-4 lg:h-40 lg:p-5"
+              >
+                <img
+                  src="./assets/badge-soc2.png"
+                  alt="SOC 2 Type 2 (AICPA SOC) compliance badge"
+                  loading="lazy"
+                  class="max-h-full w-full object-contain"
+                />
+              </li>
+
+              <li
+                class="flex h-24 w-full items-center justify-center rounded-xl border border-border bg-card p-3 sm:h-32 sm:p-4 lg:h-40 lg:p-5"
+              >
+                <img
+                  src="./assets/badge-gdpr.png"
+                  alt="GDPR compliance badge"
+                  loading="lazy"
+                  class="max-h-full w-full object-contain"
+                />
+              </li>
+
+              <li
+                class="flex h-24 w-full items-center justify-center rounded-xl border border-border bg-card p-3 sm:h-32 sm:p-4 lg:h-40 lg:p-5"
+              >
+                <img
+                  src="./assets/badge-pipeda.png"
+                  alt="PIPEDA, Personal Information Protection and Electronic Documents Act, compliance badge"
+                  loading="lazy"
+                  class="max-h-full w-full object-contain"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- FAQ                                                         -->
+      <!-- ========================================================= -->
+
+      <section id="faq" class="border-t border-border bg-background">
+        <div class="mx-auto max-w-4xl px-6 py-14 sm:py-20 lg:px-10 lg:py-24">
+          <h2
+            class="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl lg:text-4xl"
+          >
+            FAQs
+          </h2>
+
+          <ul
+            class="mt-8 divide-y divide-border border-y border-border sm:mt-10"
+          >
+            <!-- FAQ 1 -->
+            <li>
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-4 py-5 text-left sm:items-center sm:gap-6"
+                aria-expanded="true"
+              >
+                <span
+                  class="min-w-0 font-display text-[0.95rem] font-semibold leading-snug text-ink sm:text-lg"
+                >
+                  What does shuriii's DistrictOS offer beyond our current EdTech
+                  vetting, vendor questionnaires, and point-in-time risk
+                  reviews?
+                </span>
+
+                <span
+                  class="faq-icon relative flex size-8 shrink-0 items-center justify-center rounded-md border border-border bg-card text-ink-soft"
+                >
+                  <svg
+                    class="faq-plus size-4 opacity-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+
+                  <svg
+                    class="faq-minus absolute size-4 opacity-100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content grid grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="max-w-2xl pb-6 text-sm leading-relaxed text-ink-soft sm:text-base"
+                  >
+                    Most boards today rely on point-in-time compliance reviews
+                    and vendor self-reports. DistrictOS moves boards from
+                    point-in-time checks to continuous third-party risk
+                    management (TPRM) and impact measurement across the full
+                    life of every vendor relationship. Boards stay on top of
+                    their legal obligations year-round and know at any time
+                    which tools are safe and working.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- FAQ 2 -->
+            <li>
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-4 py-5 text-left sm:items-center sm:gap-6"
+                aria-expanded="false"
+              >
+                <span
+                  class="min-w-0 font-display text-[0.95rem] font-semibold leading-snug text-ink sm:text-lg"
+                >
+                  What does DistrictOS mean for our existing vetting and
+                  third-party risk strategy?
+                </span>
+
+                <span
+                  class="faq-icon relative flex size-8 shrink-0 items-center justify-center rounded-md border border-border bg-card text-ink-soft"
+                >
+                  <svg
+                    class="faq-plus size-4 opacity-100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+
+                  <svg
+                    class="faq-minus absolute size-4 opacity-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="faq-answer max-w-2xl pb-6 text-sm leading-relaxed text-ink-soft opacity-0 transition-opacity duration-300 ease-out sm:text-base"
+                  >
+                    DistrictOS builds on the process your board already has and
+                    manages ongoing oversight on your behalf, with no added work
+                    for your team. DistrictOS provides the evidence; your board
+                    makes the final decisions.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- FAQ 3 -->
+            <li>
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-4 py-5 text-left sm:items-center sm:gap-6"
+                aria-expanded="false"
+              >
+                <span
+                  class="min-w-0 font-display text-[0.95rem] font-semibold leading-snug text-ink sm:text-lg"
+                >
+                  How does DistrictOS support different privacy and regulatory
+                  requirements?
+                </span>
+
+                <span
+                  class="faq-icon relative flex size-8 shrink-0 items-center justify-center rounded-md border border-border bg-card text-ink-soft"
+                >
+                  <svg
+                    class="faq-plus size-4 opacity-100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+
+                  <svg
+                    class="faq-minus absolute size-4 opacity-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="faq-answer max-w-2xl pb-6 text-sm leading-relaxed text-ink-soft opacity-0 transition-opacity duration-300 ease-out sm:text-base"
+                  >
+                    DistrictOS applies the same rigorous review to every tool,
+                    aligned to each board's federal, provincial, and local
+                    requirements, including privacy law, data residency, board
+                    policies, and reporting obligations. Each board can meet the
+                    rules of its own jurisdiction.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- FAQ 4 -->
+            <li>
+              <button
+                type="button"
+                class="faq-button flex w-full items-start justify-between gap-4 py-5 text-left sm:items-center sm:gap-6"
+                aria-expanded="false"
+              >
+                <span
+                  class="min-w-0 font-display text-[0.95rem] font-semibold leading-snug text-ink sm:text-lg"
+                >
+                  What does our board need to provide to get started?
+                </span>
+
+                <span
+                  class="faq-icon relative flex size-8 shrink-0 items-center justify-center rounded-md border border-border bg-card text-ink-soft"
+                >
+                  <svg
+                    class="faq-plus size-4 opacity-100"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" />
+                  </svg>
+
+                  <svg
+                    class="faq-minus absolute size-4 opacity-0"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="faq-answer max-w-2xl pb-6 text-sm leading-relaxed text-ink-soft opacity-0 transition-opacity duration-300 ease-out sm:text-base"
+                  >
+                    Just your current EdTech tool inventory. shuriii's
+                    DistrictOS handles the rest, giving your board a complete,
+                    verified view of every vendor 24/7.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- DEMO CTA                                                    -->
+      <!-- ========================================================= -->
+
+      <section
+        id="demo"
+        class="border-t border-border"
+        style="background-image: var(--gradient-hero)"
       >
-        <path
-          d="M12 19V5M5 12L12 5L19 12"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-    <script src="index.js"></script>
+        <div
+          class="mx-auto max-w-5xl px-6 py-14 text-center sm:py-20 lg:px-10 lg:py-24"
+        >
+          <h2
+            class="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl lg:text-4xl"
+          >
+            Build a safer, more effective EdTech ecosystem
+          </h2>
+
+          <p
+            class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-ink-soft"
+          >
+            See how DistrictOS can support your public school board, ministry of
+            education, and shared-service organization. Request a demo for your
+            ICT, business, and instructional leadership teams.
+          </p>
+
+          <div
+            class="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-center"
+          >
+            <a
+              href="https://5ojdx6.share-na3.hsforms.com/2i6tv8EJjSO6PlvOdOVQUdw"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Book Demo
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                class="size-4"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- FOOTER                                                      -->
+      <!-- ========================================================= -->
+
+      <footer
+        class="relative overflow-hidden bg-primary text-primary-foreground"
+        style="
+          background-image: radial-gradient(
+            110% 120% at 0% 0%,
+            color-mix(in oklab, var(--brand) 40%, transparent),
+            transparent 62%
+          );
+        "
+      >
+        <div
+          class="h-0.5 w-full"
+          style="background-image: var(--gradient-frame)"
+          aria-hidden="true"
+        ></div>
+
+        <div class="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-10 lg:py-20">
+          <div
+            class="grid gap-10 sm:gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-20"
+          >
+            <div>
+              <img
+                src="./assets/shuriii-logo-light.png"
+                alt="shuriii"
+                class="h-7 w-auto"
+              />
+
+              <p
+                class="mt-7 max-w-sm text-sm leading-relaxed text-primary-foreground antialiased"
+              >
+                Continuous third-party risk management and impact measurement
+                for K&#8209;12 school boards.
+              </p>
+
+              <address
+                class="mt-5 max-w-sm text-sm not-italic leading-relaxed text-primary-foreground/80 antialiased"
+              >
+                33 Bloor St E, 5th Floor
+                <br />
+                Toronto, ON, M4W 3H1, Canada
+              </address>
+
+              <div class="mt-7 flex flex-wrap items-center gap-4">
+                <span
+                  class="inline-flex items-center gap-2 rounded-full border border-primary-foreground/15 bg-primary-foreground/5 px-4 py-2 text-xs font-semibold tracking-wide"
+                >
+                  <svg
+                    viewBox="0 0 64 64"
+                    class="size-3.5"
+                    role="img"
+                    aria-label="Canadian maple leaf"
+                  >
+                    <path
+                      fill="#D52B1E"
+                      d="M32 4l4.3 8.6c.5 1 1.6 1.4 2.6.9l4.6-2.3-2.2 11.2c-.3 1.6 1.5 2.7 2.8 1.7l4.3-3.3 1.6 3.5c.4.8 1.3 1.2 2.1 1l7.5-1.6-2.5 8.2c-.3.9.1 1.9.9 2.3l3.4 1.8-14.9 12.1c-.8.6-1.1 1.6-.8 2.5l1.3 4.1-13.7-2.4c-1-.2-2 .6-2 1.6l.6 10.4h-3.4l.6-10.4c.1-1-.9-1.8-2-1.6l-13.7 2.4 1.3-4.1c.3-.9 0-1.9-.8-2.5L.9 37.3l3.4-1.8c.8-.4 1.2-1.4.9-2.3L2.7 25l7.5 1.6c.9.2 1.8-.2 2.1-1l1.6-3.5 4.3 3.3c1.3 1 3.1-.1 2.8-1.7L18.8 12.6l4.6 2.3c1 .5 2.1.1 2.6-.9L32 4z"
+                    />
+                  </svg>
+
+                  Made in Canada
+                </span>
+
+                <a
+                  href="https://www.linkedin.com/company/shuriii"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="shuriii on LinkedIn"
+                  class="inline-flex size-9 items-center justify-center rounded-full border border-primary-foreground/30 text-primary-foreground transition-colors hover:border-primary-foreground/60 hover:text-signal"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    class="size-4.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 13.875C21 10.11 18.99 8.5 16.29 8.5c-2.19 0-3.17 1.2-3.72 2.04V8.5H9.07V21h3.5v-6.19c0-1.63.31-3.2 2.32-3.2 1.98 0 2.01 1.86 2.01 3.31V21H21v-7.125Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <nav class="flex flex-col gap-1 lg:items-end">
+              <p
+                class="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-primary-foreground/45"
+              >
+                Explore
+              </p>
+
+              <a
+                href="./index.html"
+                class="py-1.5 font-display text-sm font-semibold text-primary-foreground/80 transition-colors hover:text-signal"
+              >
+                Home
+              </a>
+
+              <a
+                href="https://shuriii.com/privacy_policy.html"
+                target="_blank"
+                rel="noreferrer"
+                class="py-1.5 font-display text-sm font-semibold text-primary-foreground/80 transition-colors hover:text-signal"
+              >
+                Privacy policy
+              </a>
+
+              <a
+                href="#how-it-works"
+                class="py-1.5 font-display text-sm font-semibold text-primary-foreground/80 transition-colors hover:text-signal"
+              >
+                How it works
+              </a>
+
+              <a
+                href="#overview"
+                class="py-1.5 font-display text-sm font-semibold text-primary-foreground/80 transition-colors hover:text-signal"
+              >
+                For boards
+              </a>
+            </nav>
+          </div>
+
+          <div
+            class="mt-14 border-t border-primary-foreground/20 pt-6 text-xs leading-relaxed text-primary-foreground/85 antialiased"
+          >
+            <p>
+              &copy;2026 shuriii. DistrictOS&trade;, NeighborhoodOS&trade;, and
+              shuriii&trade; are trademarks of shuriii, inc. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- =========================================================== -->
+    <!-- FAQ JAVASCRIPT                                               -->
+    <!-- =========================================================== -->
+
+    <script>
+      const faqButtons = document.querySelectorAll(".faq-button");
+
+      faqButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const currentItem = button.closest("li");
+          const content = currentItem.querySelector(".faq-content");
+          const answer = currentItem.querySelector(".faq-answer");
+          const plus = currentItem.querySelector(".faq-plus");
+          const minus = currentItem.querySelector(".faq-minus");
+
+          const isOpen = button.getAttribute("aria-expanded") === "true";
+
+          // Close all FAQs
+          faqButtons.forEach((otherButton) => {
+            const otherItem = otherButton.closest("li");
+            const otherContent = otherItem.querySelector(".faq-content");
+            const otherAnswer = otherItem.querySelector(".faq-answer");
+            const otherPlus = otherItem.querySelector(".faq-plus");
+            const otherMinus = otherItem.querySelector(".faq-minus");
+
+            otherButton.setAttribute("aria-expanded", "false");
+
+            otherContent.classList.remove("grid-rows-[1fr]");
+            otherContent.classList.add("grid-rows-[0fr]");
+
+            if (otherAnswer) {
+              otherAnswer.classList.remove("opacity-100");
+              otherAnswer.classList.add("opacity-0");
+            }
+
+            otherPlus.classList.remove("opacity-0");
+            otherPlus.classList.add("opacity-100");
+
+            otherMinus.classList.remove("opacity-100");
+            otherMinus.classList.add("opacity-0");
+          });
+
+          // Open current FAQ if it was closed
+          if (!isOpen) {
+            button.setAttribute("aria-expanded", "true");
+
+            content.classList.remove("grid-rows-[0fr]");
+            content.classList.add("grid-rows-[1fr]");
+
+            if (answer) {
+              answer.classList.remove("opacity-0");
+              answer.classList.add("opacity-100");
+            }
+
+            plus.classList.remove("opacity-100");
+            plus.classList.add("opacity-0");
+
+            minus.classList.remove("opacity-0");
+            minus.classList.add("opacity-100");
+          }
+        });
+      });
+    </script>
+    <script>
+      (function () {
+        const toggleBtn = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const iconMenu = document.getElementById("icon-menu");
+        const iconClose = document.getElementById("icon-close");
+
+        function closeMenu() {
+          mobileMenu.classList.add("hidden");
+          mobileMenu.classList.remove("flex");
+          toggleBtn.setAttribute("aria-expanded", "false");
+          toggleBtn.setAttribute("aria-label", "Open menu");
+          iconMenu.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+        }
+
+        toggleBtn.addEventListener("click", () => {
+          const isOpen = !mobileMenu.classList.contains("hidden");
+          if (isOpen) {
+            closeMenu();
+          } else {
+            mobileMenu.classList.remove("hidden");
+            mobileMenu.classList.add("flex");
+            toggleBtn.setAttribute("aria-expanded", "true");
+            toggleBtn.setAttribute("aria-label", "Close menu");
+            iconMenu.classList.add("hidden");
+            iconClose.classList.remove("hidden");
+          }
+        });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+      })();
+    </script>
   </body>
 </html>
